@@ -1,0 +1,37 @@
+:root {
+  --primary-color: black;
+  --icon-color: car(--primary-color);
+  --gap-sm: 4px;
+  --gap-md: 8px;
+  --gap-lg: 12px;
+  --gap-xl: 18px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-md);
+}
+
+.icon {
+  color: var(--icon-color);
+}
+
+.icon__circle-container {
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+  padding: var(--gap-sm);
+}
+
+.todo__new-task--row {
+  margin-top: var(--gap-xl);
+}
+
+.todo__new-task {
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.todo__new-task:focus {
+  outline: none;
+}
